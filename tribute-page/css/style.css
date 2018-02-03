@@ -111,12 +111,13 @@ footer {
 @media only screen and (max-width: 600px) {
 
   body {
-    margin: 0 8px;
+    margin: 0 15px;
     font-size: .9em;
   }
 
   .container {
-    grid-template-columns: 8px 1fr 1fr 8px;
+    min-width: 0;
+    grid-template-columns: 15px 1fr 1fr 15px;
   }
   
   .column-1, .column-2 {
