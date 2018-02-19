@@ -1,0 +1,55 @@
+body {
+  font-family: 'Special Elite', cursive;  
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 750px;
+}
+
+.paragraphHeading, button {
+  font-family: 'Black Ops One', cursive;
+}
+
+h1 {
+  
+font-family: 'Bungee Inline', cursive;
+
+}
+
+#toggle {
+  width: 200px;
+  height: 200px; 
+  margin: 0 auto;
+}
+
+#toggle:active {
+  opacity: .7;
+}
+
+li {
+  background-color: lightgray;
+  padding: 1%;
+  margin: 3%;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+
+  opacity: .75;
+  background-color: lightgray;
+
+  font-size: .7em;
+}
