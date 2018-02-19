@@ -14,3 +14,4 @@ _"-We now have 6 200-hour certificates instead of 3 400-hour ones. These are bro
 - [Basic-Algorithm-Scripting](https://github.com/kappafon/kappafon.github.io/tree/master/Basic-Algorithm-Scripting)
 - [Tribute Page](https://kappafon.github.io/tribute-page/index.html)
 - [Quote Generator](https://kappafon.github.io/quote-generator/index.html)
+- [Local Weather App](https://kappafon.github.io/local-weather/index.html)
