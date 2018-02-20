@@ -102,7 +102,7 @@ Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
 
 Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
-###Challenge 14:
+### Challenge 14:
 
 You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 
