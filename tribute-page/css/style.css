@@ -47,10 +47,10 @@ body {
 }
 
 .img-no2 {
-  width: 100%;
+  max-width: 100%;
   min-height: 100px;
   margin: 10px 0;
-
+  display: block;
   opacity: .9;
 
   grid-column: 1 / -1;
