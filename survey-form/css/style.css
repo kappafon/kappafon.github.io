@@ -1,0 +1,50 @@
+body {
+  background-color:hsl(52, 26%, 71%);
+  min-width: 320px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Lobster, monospace;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid hsl(46, 24%, 54%);
+  background-color:hsl(52, 46%, 91%);
+}
+
+.img-logo {
+  display: block;
+  max-width: 274px;
+  height: auto;
+  float: right;
+}
+
+[type='checkbox'], [type='radio'] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 10px;
+
+  opacity: .75;
+  background-color: hsl(52, 16%, 61%);
+
+  font-size: .8em;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    margin: 0 15px;
+    font-size: .9em;
+  }
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Insult Sword Fighting - Survey Form</title>
+  <meta name="description" content="freeCodeCamp personal project - Survey Form">
+  <meta name="author" content="kappafon">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+  <h1 id="title">Insult Sword Fighting - Survey Form</h1>
+
+  <form id="survey-form" class="container">
+
+    <p id="description">Help us increase the global awareness of Insult Sword Fighting</p>
+
+    <img class="img-logo" src="images/sword-fighting.png" alt="Melee Island - Sword Fighting Academy round logo">
+
+    <div>
+      <label id="name-label" for="name">* Name:</label>
+      <input class="column2" id="name" required type="text" name="name" placeholder="Enter your name">
+    </div>
+
+    <div>
+      <label id="email-label" for="email">* Email:</label>
+      <input class="column2" id="email" required type="email" name="email" placeholder="Enter your email">
+    </div>
+
+    <div>
+      <label id="number-label" for="years-of-exp">* Years of practice:</label>
+      <input class="column2" id="number" type="number" min="1" max="125" name="years-of-exp" placeholder="Yearss">
+    </div>
+    <hr>
+    <div>
+      <fieldset>
+        <legend>How often do you practice your Insult Sword Fighting skills?</legend>
+        <div>
+          <label for="no-practice">
+            <input type="radio" checked name="practice" value="1">No practice, I'm a natural</label>
+        </div>
+        <div>
+          <label for="one-or-two">
+            <input type="radio" name="practice" value="2">1-2 duels a week</label>
+        </div>
+        <div>
+          <label for="three-or-four">
+            <input type="radio" name="practice" value="3">3-4 duels a week</label>
+        </div>
+        <div>
+          <label for="five-and-up">
+            <input type="radio" name="practice" value="4">Practice is my middle name</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Select all the traits a mighty pirate should have.</legend>
+        <section>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="mighty">Mighty</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="vicious">Vicious</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="gentle">Gentle</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="thieving">Thieving</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="cutthroat">Cutthroat</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="jolly">Jolly</label>
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="wicked">Wicked</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="courageous">Courageous</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="troublesome">Troublesome</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="nasty">Nasty</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="scheming">Scheming</label>
+          </div>
+          <div>
+            <label for="traits">
+              <input type="checkbox" name="traits" value="kind">Kind</label>
+          </div>
+        </section>
+      </fieldset>
+    </div>
+
+    <div>
+      <label for="sword-master">According to your opinion, select the best Sword Master in the lot.</label>
+      <select id="dropdown" name="sword-master">
+        <option disabled selected value>Select one</option>
+        <option value="carla">Carla</option>
+        <option value="smirk">Captain Smirk</option>
+        <option value="guybrush">Guybrush Threepwood</option>
+        <option value="lechuck">LeChuck</option>
+        <option value="myself">I can take those schmucks!</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="comments">Additional coments for the Pirate Leaders:</label>
+      <textarea name="comments" rows="4" cols="30"></textarea>
+    </div>
+    <button id="submit" type="submit">Submit the Form!</button>
+    </div>
+  </form>
+
+  <footer>
+    <a target="_blank " href="https://kappafon.github.io/">&copy
+      <script>document.write(new Date().getFullYear());</script> kappafon</a> - some rights reserved. Designed as a
+    <strong>freeCodeCamp</strong> personal challenge.
+  </footer>
+
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
