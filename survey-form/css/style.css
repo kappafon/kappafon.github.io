@@ -1,36 +1,76 @@
 body {
   background-color:hsl(52, 26%, 71%);
-  min-width: 320px;
-  font-family: sans-serif;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  min-width: 320px;
+  
+  
 }
 
 h1 {
-  text-align: center;
-  font-family: Lobster, monospace;
+  font-family: 'Lobster Two', cursive;
 }
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid hsl(46, 24%, 54%);
   background-color:hsl(52, 46%, 91%);
+  border: 1px solid hsl(46, 24%, 54%);
+  margin: 0 auto;
+  max-width: 900px;
+  width: 75%;
+  padding: 10px;    
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.inputField {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid hsl(46, 24%, 54%);
+  border-radius: 2px;
+}
+
+button {
+  background-color: hsl(46, 24%, 54%);
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.imgDiv {
+  width: 100%;
 }
 
 .img-logo {
-  display: block;
+  opacity: 50%;
   max-width: 274px;
   height: auto;
-  float: right;
 }
 
 [type='checkbox'], [type='radio'] {
   margin-top: 10px;
+  margin: 3px;
   margin-bottom: 15px;
 }
 
 footer {
-  max-width: 920px;
+  max-width: 902px;
   margin: 0 auto;
   padding: 10px;
 
@@ -40,11 +80,32 @@ footer {
   font-size: .8em;
 }
 
-@media only screen and (max-width: 600px) {
-
+@media screen and (max-width: 833px) {
   body {
     margin: 0 15px;
     font-size: .9em;
   }
+  .inputField {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
 
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .inputField {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
 }
