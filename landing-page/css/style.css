@@ -1,0 +1,152 @@
+body{
+  background-color:white;
+}
+
+/*navbar style*/
+
+.navbar{
+  background:hsl(24, 100%, 50%);
+}
+.nav-link , .navbar-brand{
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+.nav-link:hover{
+  background: hsl(0, 0%, 100%);
+  color: hsl(24, 100%, 50%);
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+/*header style*/
+
+.logo {
+  width: 50px;
+  display: inline-block;
+  float: left;
+  padding-right: 5px;
+  opacity: 0.5;
+  
+}
+
+.header{
+  background-image: url('../images/headerback.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+ }
+
+.overlay{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.80);
+}
+
+.description{
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+}
+.description h1{
+color:hsl(24, 100%, 50%);
+}
+.description p{
+color:#666;
+font-size: 20px;
+width: 50%;
+line-height: 1.5;
+}
+.description button{
+border:1px  solid hsl(24, 100%, 50%);
+background:hsl(24, 100%, 50%);
+color:#fff;
+}
+
+.btn-outline-primary:hover {
+  background-color: hsl(212, 100%, 50%)!important;
+}
+
+/*about style*/
+
+.about{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.about h2{
+  color:hsl(24, 100%, 50%);
+  font-size: 2.5em;
+	margin: 2em;
+}
+.about img{
+	height: auto;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:4px solid hsl(212, 100%, 50%);
+}
+.about .desc h3{
+	color: hsl(212, 100%, 50%);
+}
+.about .desc p{
+	line-height:2;
+	color:#888;
+}
+
+/*usage style*/
+
+.usage{
+	margin: 4em 0;
+	position: relative;	
+}
+.usage h2{
+  color:#F97300;
+  font-size: 2.5em;
+	margin: 2em;	
+}
+.usage .card{
+  box-shadow: 0 0 20px #ccc;
+  margin: 5px;
+}
+.usage .card img{
+  width: 100%;
+  height: 14em;
+	object-fit: cover;
+}
+
+.usage .card-title{
+	color:#F97300;
+	 
+}
+.usage .card-body{
+	padding: 1em;
+}
+
+@media screen and (max-width: 833px) {
+
+}
+
+@media screen and (max-width: 520px) {
+
+}
