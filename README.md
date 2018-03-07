@@ -17,3 +17,4 @@ _"-We now have 6 200-hour certificates instead of 3 400-hour ones. These are bro
 - [Local Weather App](https://kappafon.github.io/local-weather/index.html)
 - [Wikipedia Viewer](https://kappafon.github.io/wikipedia%20viewer/index.html)
 - [Survey Form](https://kappafon.github.io/survey-form/index.html)
+- [Landing Page](https://kappafon.github.io/landing-page/index.html)
