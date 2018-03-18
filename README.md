@@ -11,10 +11,20 @@ _"-We now have 6 200-hour certificates instead of 3 400-hour ones. These are bro
       Responsive Web Design, Algorithms and Data Structures, Front End Libraries (includes React and Redux), Data Visualization (includes D3), APIs and Microservices (includes Node, Express, and MongoDB), Quality Assurance and Information Security"_
 
 ### freeCodeCamp archive 
-- [Basic-Algorithm-Scripting](https://github.com/kappafon/kappafon.github.io/tree/master/Basic-Algorithm-Scripting)
-- [Tribute Page](https://kappafon.github.io/tribute-page/index.html)
-- [Quote Generator](https://kappafon.github.io/quote-generator/index.html)
-- [Local Weather App](https://kappafon.github.io/local-weather/index.html)
-- [Wikipedia Viewer](https://kappafon.github.io/wikipedia-viewer/index.html)
+
+- More Coming...
+- [Responsive Ninja Course Page](https://kappafon.github.io/ninja-responsive/index.html)
+- [Responsive Lightsaber Inc Layout](https://kappafon.github.io/lightsaber-inc-layout/index.html)
+- [Bootstrap Portal Gun - Landing Page](https://kappafon.github.io/landing-page/index.html)
 - [Survey Form](https://kappafon.github.io/survey-form/index.html)
-- [Landing Page](https://kappafon.github.io/landing-page/index.html)
+- [Wikipedia Viewer](https://kappafon.github.io/wikipedia-viewer/index.html)
+- [Local Weather App](https://kappafon.github.io/local-weather/index.html)
+- [Quote Generator](https://kappafon.github.io/quote-generator/index.html)
+- [Tribute Page](https://kappafon.github.io/tribute-page/index.html)
+- [Basic-Algorithm-Scripting](https://github.com/kappafon/kappafon.github.io/tree/master/Basic-Algorithm-Scripting)
+
+
+
+
+
+
