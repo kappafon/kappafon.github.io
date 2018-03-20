@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.par-image1,
+.par-image2,
+.par-image3,
+.par-image4 {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*
+        fixed = parallax
+        scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.par-image1 {
+    background-image: url("../images/image1.jpg");
+    min-height: 100%;
+}
+
+.par-image2 {
+    background-image: url("../images/image2.jpg");
+    min-height: 400px;
+}
+
+.par-image3 {
+    background-image: url("../images/image3.jpg");
+    min-height: 400px;
+}
+
+.par-image4 {
+    background-image: url("../images/image4.jpg");
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.par-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.par-text .border {
+    background-color: rgba(17, 17, 17, 0.75);
+    color: #fff;
+    padding: 20px;
+}
+
+.par-text .trans {
+    background-color: transparent;
+}
+
+@media (max-width: 568px) {
+    .par-image1 .par-image2 .par-image3 .par-image4 {
+        background-attachment: scroll;
+    }
+}
