@@ -33,6 +33,7 @@ gulp.task("serve", ["sass"], function() {
         ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"],
         ["sass"]
     );
+    gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
 // Move Fonts Folder to src/fonts
