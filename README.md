@@ -13,6 +13,7 @@ _"-We now have 6 200-hour certificates instead of 3 400-hour ones. These are bro
 ### project archive 
 
 - More Coming...
+- [Admin UI](https://kappafon.github.io/admin-ui/src/index.html)
 - [Book Promotion](https://kappafon.github.io/book-project/src/index.html)
 - [Social Theme](https://kappafon.github.io/social-theme/src/index.html)
 - [Parallax Example Page](https://kappafon.github.io/paralax-example/index.html)
