@@ -18,3 +18,14 @@
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important; } }
+
+#work img {
+  opacity: 0.9; }
+
+#work img:hover {
+  opacity: 1;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
+
+.card-body {
+  border-radius: 0;
+  border-top: none; }

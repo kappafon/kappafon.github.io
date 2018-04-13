@@ -28,3 +28,19 @@
         padding: 3em !important;
     }
 }
+
+#work {
+    img {
+        opacity: 0.9;
+    }
+
+    img:hover {
+        opacity: 1;
+        box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    }
+}
+
+.card-body {
+    border-radius: 0;
+    border-top: none;
+}
