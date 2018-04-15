@@ -1,6 +1,41 @@
-.bg-black {
-    background: #000;
-    color: #fff;
+.background-bg {
+    background: #21212a;
+}
+
+.background-txt {
+    color: #b6b6cc;
+}
+
+.primary-bg {
+    background: #2e2f37;
+}
+
+.primary-txt {
+    color: #f0f0f7;
+}
+
+.secondary-bg {
+    background: #353740;
+}
+
+.secondary-txt {
+    color: #b7b7ce;
+}
+
+.resume-bg {
+    background: #34353e;
+}
+
+.work-bg {
+    background: #3a3b45;
+}
+
+.contact-bg {
+    background: #3f414c;
+}
+
+.light-txt {
+    color: #b9bac4;
 }
 
 #main-header {
@@ -43,4 +78,44 @@
 .card-body {
     border-radius: 0;
     border-top: none;
+}
+
+li {
+    padding-top: 0.5em;
+}
+
+.icon-width {
+    width: 2.5em;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 5px 0 0 5px;
+}
+
+.padding-y {
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+
+.bg-dark {
+    background: #2e2f37 !important;
+}
+
+.dark-bg {
+    background: #1d1d22;
+}
+
+#home img {
+    height: 40px;
+    width: 40px;
+    margin: 20px 0;
+}
+
+#main-header a {
+    color: #f0f0f7;
+}
+
+#main-header a:hover {
+    color: #b7b7ce;
 }
