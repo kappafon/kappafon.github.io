@@ -1,0 +1,254 @@
+/* CSS Variables */
+:root {
+  --primary: #f8992d;
+  --dark: #eaeaeb;
+  --light: #f4f4f5;
+  --muted: #777777;
+  --heading: #a0a0a0;
+}
+/* Core Styles */
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+/* Navigation */
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+.main-nav li {
+  display: inline;
+  list-style: none;
+  padding: 0.7rem;
+  color: var(--muted);
+}
+.main-nav strong {
+  padding: 0.7rem;
+  color: var(--primary);
+  font-size: 1.15rem;
+}
+i {
+  padding: 0 0.35rem 0 0;
+  color: #111;
+}
+.main-nav :last-child {
+  color: var(--primary);
+}
+.main-nav a {
+  float: right;
+  padding: 0 0 0 0.7rem;
+  padding-right: 23%;
+  text-decoration: none;
+}
+.side-nav {
+  list-style: none;
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  right: 2.15rem;
+  margin: 0;
+  padding: 0;
+}
+.side-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.side-nav i {
+  color: #fff;
+}
+/* Buttons */
+.btn {
+  width: 100%;
+  background: var(--primary);
+  border-radius: 0.7rem;
+  padding: 0.7rem 1.1rem;
+  margin: 0.7rem 0;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--primary);
+  opacity: 0.7;
+}
+/* The Close Button */
+.close {
+  color: var(--primary);
+  font-weight: bold;
+  float: right;
+  margin-top: 0.938em;
+}
+.btn-secondary {
+  background: var(--primary);
+  border-radius: 0.7rem;
+  padding: 0.7rem 1.1rem;
+  margin: 0.7rem 0.5rem;
+  width: 7rem;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.delete-server {
+  color: var(--dark);
+}
+.close:hover,
+.close:focus,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.delete-farm:hover,
+.delete-farm:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.white {
+  color: #fff;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  padding-top: 6.25em;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 12.5em;
+  padding: 0;
+  border: 0.063em solid #888;
+  border-radius: 0.938em;
+  width: 80%;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2),
+    0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -18.75em;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -18.75em;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.modal-header {
+  padding: 0.125em 1em;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 0.625em 0.625em 0 0;
+}
+.modal-body {
+  padding: 1.25em 1.875em;
+}
+.modal-footer {
+  height: 5em;
+  padding: 0.125em 0.938em;
+  background-color: #fff;
+  border-top: 0.063em solid var(--dark);
+  border-radius: 0 0 0.625em 0.625em;
+}
+input {
+  box-sizing: border-box;
+  font-size: 0.875em;
+  color: #151515;
+  display: inline;
+  padding: 0.313em 0.938em;
+  margin: 0 0 0.625em 0;
+  width: auto;
+  border-radius: 0.313em;
+  border: 0.063em solid var(--heading);
+}
+label {
+  box-sizing: border-box;
+  display: inline;
+  padding: 0 0.625em 0 1.25em;
+  font-size: 1em;
+  color: #151515;
+}
+fieldset {
+  margin: 0 0 0.625em;
+}
+fieldset:nth-child(1) input:nth-child(7) {
+  width: 80%;
+  display: inline;
+}
+/* Main Section Styles */
+.container {
+  margin: 3.33rem 2.857rem 0 0;
+  padding: 0 2.857rem 0 3.571rem;
+  width: 75%;
+  height: 91vh;
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #151515;
+}
+tr:nth-child(1) {
+  background-color: var(--light);
+  border-top: 0.07143rem solid var(--dark);
+  font-weight: bold;
+  color: var(--muted);
+}
+td,
+th {
+  padding: 0.313em 0.313em;
+}
+th {
+  padding: 0.57;
+  margin: 0;
+  text-align: right;
+  color: var(--heading);
+  font-weight: normal;
+}
+table tr:nth-child(2) :nth-child(3) {
+  color: black !important;
+}

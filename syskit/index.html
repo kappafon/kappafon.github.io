@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SysKit UI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <i class='fa fa-server'></i>Farms
+        <strong id="farmNo">0</strong>
+      </li>
+      <li>
+        <i class='fa fa-desktop'></i>Servers
+        <strong id="serverNo">0</strong>
+      </li>
+      <li>
+        <i class='fa fa-desktop'></i>License Server Limit
+        <strong id="limitNo">0 / 60</strong>
+      </li>
+      <li>
+        <a id="manage" href="#">
+          <i class='fa fa-pencil-alt'></i>Manage</a>
+      </li>
+    </ul>
+  </nav>
+
+  <ul class="side-nav">
+    <li>
+      <button id="openModalBtn" class="btn">
+        <i class='fa fa-server'></i>Add Farm</button>
+    </li>
+    <li>
+      <button id="scan" class="btn">
+        <i class='fa fa-server'></i>Scan</button>
+    </li>
+    <li>
+      <button id="import" class="btn">
+        <i class='fa fa-database'></i>Import From SPDocKit</button>
+    </li>
+  </ul>
+
+
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="close white fa fa-times"></i>
+        <h2>Add Farm</h2>
+      </div>
+      <div class="modal-body">
+        <form id="form" class="form">
+          <fieldset>
+            <legend>Farm Information</legend>
+            <div>
+              <label for="farmName">Farm name</label>
+              <input required id="farmName" name="farmName" type="text">
+              <label for="serverCount">No of Servers
+                <small>
+                  <em>(1 - 60)</em>
+                </small>
+              </label>
+              <input required id="serverCount" name="serverNumber" type="number" min="1" max="60">
+              <br>
+              <label for="ulsPath">ULS path</label>
+              <input required id="ulsPath" name="ulsPath" type="text" value="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\1\LOGS\">
+            </div>
+          </fieldset>
+          <fieldset class='server-block'>
+            <legend>Server Information</legend>
+          </fieldset>
+      </div>
+      <div class="modal-footer">
+        <button id="addFarm" type="submit" class="btn-secondary">Add</button>
+        <button id="resetForm" type="reset" value="Reset" class="btn-secondary">Reset</button>
+        <button type="button" class="close btn-secondary">Close</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <!-- Main Section -->
+
+  <div class="container" id='container'>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
