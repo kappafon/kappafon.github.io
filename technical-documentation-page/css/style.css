@@ -1,3 +1,103 @@
+:root {
+    --nav-bar-width: calc(6.25rem + 5vmin);
+    --nav-bar-height: 3.75rem;
+    --footer-height: 1.875rem;
+}
+
 * {
     box-sizing: border-box;
+}
+
+/* region mobile nav-bar */
+.nav-bar__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--nav-bar-height);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: gainsboro;
+    bottom: 30px;
+}
+
+.nav-bar__bottom > .nav-bar__header {
+    display: none;
+}
+
+.nav-bar__bottom > ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+/* endregion mobile nav-bar */
+
+/* region mobile main-content */
+.container {
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - (var(--nav-bar-height) + var(--footer-height)));
+}
+/* endregion mobile main-content */
+
+/* region mobile footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: var(--footer-height);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: gainsboro;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer > span {
+    display: none;
+}
+/* endregion mobile footer */
+
+@media only screen and (min-width: 768px) {
+    /* desktop */
+
+    /* region desktop nav-bar */
+    .nav-bar__side {
+        justify-content: flex-start;
+        height: calc(100% - var(--footer-height));
+        width: var(--nav-bar-width);
+        position: fixed;
+        z-index: 1;
+        background: gainsboro;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-bar__bottom > .nav-bar__header {
+        display: block;
+    }
+
+    .nav-bar__side > ul {
+        display: block;
+    }
+    /* endregion desktop nav-bar */
+
+    /* region desktop main-content */
+    .container {
+        width: calc(100% - var(--nav-bar-width));
+        height: calc(100vh - var(--footer-height));
+        margin-left: var(--nav-bar-width);
+    }
+    /* endregion desktop main-content */
+
+    /* region desktop footer */
+    .footer > span {
+        margin: 0 5px;
+        display: inline;
+    }
+    /* endregion desktop footer */
 }
