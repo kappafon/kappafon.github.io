@@ -45,6 +45,7 @@
     overflow: auto;
     height: calc(100vh - (var(--nav-bar-height) + var(--footer-height)));
     height: calc(100% - (var(--nav-bar-height) + var(--footer-height)));
+    z-index: 0;
 }
 /* endregion mobile main-content */
 
