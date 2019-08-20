@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+.body {
+    height: 100vh;
+    max-height: 100vh;
+}
+
 /* region mobile nav-bar */
 .nav-bar__bottom {
     box-shadow: 0 -1px 6px gainsboro;
@@ -38,6 +43,7 @@
     width: 100%;
     overflow: auto;
     height: calc(100vh - (var(--nav-bar-height) + var(--footer-height)));
+    height: calc(100% - (var(--nav-bar-height) + var(--footer-height)));
 }
 /* endregion mobile main-content */
 
