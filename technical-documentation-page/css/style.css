@@ -1,7 +1,7 @@
 :root {
     --nav-bar-width: calc(6.25rem + 5vmin);
     --nav-bar-height: 3.75rem;
-    --footer-height: 1.875rem;
+    --footer-height: 1.5625rem;
 }
 
 * {
@@ -10,6 +10,7 @@
 
 /* region mobile nav-bar */
 .nav-bar__bottom {
+    box-shadow: 0 -1px 6px gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,8 +18,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
-    background: gainsboro;
-    bottom: 30px;
+    bottom: var(--footer-height);
 }
 
 .nav-bar__bottom > .nav-bar__header {
@@ -43,6 +43,7 @@
 
 /* region mobile footer */
 .footer {
+    opacity: 0.75;
     display: flex;
     justify-content: center;
     align-items: center;
