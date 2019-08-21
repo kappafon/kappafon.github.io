@@ -1,55 +1,57 @@
 body {
-  font-family: 'Special Elite', cursive;  
-  margin-top: 100px;
+    margin-top: 100px;
+
+    font-family: 'Special Elite', cursive;
 }
 
 .container {
-  max-width: 750px;
+    max-width: 750px;
 }
 
-.paragraphHeading, button {
-  font-family: 'Black Ops One', cursive;
+.paragraphHeading,
+button {
+    font-family: 'Black Ops One', cursive;
 }
 
 h1 {
-  
-font-family: 'Bungee Inline', cursive;
-
+    font-family: 'Bungee Inline', cursive;
 }
 
 #toggle {
-  width: 200px;
-  height: 200px; 
-  margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 #toggle:active {
-  opacity: .7;
+    opacity: 0.7;
 }
 
 li {
-  background-color: lightgray;
-  padding: 1%;
-  margin: 3%;
+    margin: 3%;
+    padding: 1%;
+
+    background-color: lightgray;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .footer {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
+    position: fixed;
+    bottom: 0;
 
-  overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
 
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
+    overflow: hidden;
 
-  opacity: .75;
-  background-color: lightgray;
+    font-size: 0.7em;
+    text-align: center;
 
-  font-size: .7em;
+    background-color: lightgray;
+
+    opacity: 0.75;
 }
