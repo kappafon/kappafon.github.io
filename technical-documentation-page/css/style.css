@@ -2,6 +2,15 @@
     --nav-bar-width: calc(6.25rem + 5vmin);
     --nav-bar-height: 3.75rem;
     --footer-height: 1.5625rem;
+    --container-padding: calc(0.625rem + 5vmin);
+
+    --primary-color: #9d5c63;
+    --secondary-color: #d6e3f8;
+    --tetriary-color: #e4bb97;
+    --background-color: #28292b;
+    --background-alt-color: #3b3c3e;
+    /* --shadow-color: #fef5ef; */
+    --font-color: #fef5ef;
 }
 
 * {
@@ -9,8 +18,11 @@
 }
 
 .body {
+    width: 100vw;
     height: 100vh;
     max-height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* region mobile nav-bar */
@@ -25,20 +37,55 @@
     width: 100%;
     height: var(--nav-bar-height);
 
-    background: white;
-    box-shadow: 0 -1px 6px gainsboro;
+    border-top: 3px solid var(--background-alt-color);
+    /* box-shadow: 0 -1px 1px white; */
 }
 
-.nav-bar__bottom > .nav-bar__header {
+.nav-bar__bottom > .nav-bar__header,
+.nav-link > span {
     display: none;
 }
 
 .nav-bar__bottom > ul {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    margin: 0;
     padding: 0;
 
     list-style-type: none;
+}
+
+.nav-item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    /* border-right: 1px solid var(--background-color); */
+    /* border-left: 1px solid rgba(253, 102, 0, 1); */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    color: white;
+    text-decoration: none;
+
+    background-color: var(--primary-color);
+}
+
+.nav-link > i {
+    margin-top: -5px;
+    padding: 0 5px 3px 5px;
+
+    box-shadow: 0 5px 7px -6px var(--tetriary-color);
+}
+
+.fas {
+    font-size: 1.75rem;
 }
 /* endregion mobile nav-bar */
 
@@ -46,9 +93,24 @@
 .container {
     z-index: 0;
 
-    width: 100%;
     height: calc(100% - (var(--nav-bar-height) + var(--footer-height)));
+    /* padding: 0 var(--container-padding); */
     overflow: auto;
+
+    background: var(--background-alt-color);
+}
+
+.container > .main-section {
+    /* margin: 1.875rem calc(-1 * (var(--container-padding))); */
+    margin: 1.875rem 0;
+    padding: var(--container-padding);
+
+    color: var(--font-color);
+
+    background: var(--background-color);
+
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
 }
 /* endregion mobile main-content */
 
@@ -68,7 +130,7 @@
     text-align: center;
     vertical-align: middle;
 
-    background: #e9e9e9;
+    background: var(--primary-color);
 }
 
 .footer > a {
