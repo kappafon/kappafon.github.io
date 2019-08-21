@@ -15,6 +15,10 @@
         "*.css": [
             "stylelint --fix",
             "git add"
+        ],
+        "*.scss": [
+            "stylelint --fix",
+            "git add"
         ]
     }
 }
