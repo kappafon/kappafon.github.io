@@ -1,89 +1,118 @@
 .background-bg {
-  background: #21212a; }
+    background: #21212a;
+}
 
 .background-txt {
-  color: #b6b6cc; }
+    color: #b6b6cc;
+}
 
 .primary-bg {
-  background: #2e2f37; }
+    background: #2e2f37;
+}
 
 .primary-txt {
-  color: #f0f0f7; }
+    color: #f0f0f7;
+}
 
 .secondary-bg {
-  background: #353740; }
+    background: #353740;
+}
 
 .secondary-txt {
-  color: #b7b7ce; }
+    color: #b7b7ce;
+}
 
 .resume-bg {
-  background: #34353e; }
+    background: #34353e;
+}
 
 .work-bg {
-  background: #3a3b45; }
+    background: #3a3b45;
+}
 
 .contact-bg {
-  background: #3f414c; }
+    background: #3f414c;
+}
 
 .light-txt {
-  color: #b9bac4; }
+    color: #b9bac4;
+}
 
 #main-header img {
-  width: 100%;
-  height: 100%; }
+    width: 100%;
+    height: 100%;
+}
 
 #main-header .port-item {
-  width: 30%; }
-  #main-header .port-item .fa {
-    font-size: 2em; }
+    width: 30%;
+}
+#main-header .port-item .fa {
+    font-size: 2em;
+}
 
 #main-header .port-item:hover {
-  opacity: 0.8;
-  cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.8;
+}
 
 @media (min-width: 1199px) {
-  .port-item {
-    padding: 3em !important; } }
+    .port-item {
+        padding: 3em !important;
+    }
+}
 
 #work img {
-  opacity: 0.9; }
+    opacity: 0.9;
+}
 
 #work img:hover {
-  opacity: 1;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
 
 .card-body {
-  border-radius: 0;
-  border-top: none; }
+    border-top: none;
+    border-radius: 0;
+}
 
 li {
-  padding-top: 0.5em; }
+    padding-top: 0.5em;
+}
 
 .icon-width {
-  width: 2.5em;
-  margin: auto;
-  text-align: center;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  border-radius: 5px 0 0 5px; }
+    width: 2.5em;
+    margin: auto;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+
+    text-align: center;
+
+    border-radius: 5px 0 0 5px;
+}
 
 .padding-y {
-  padding-top: 4.5em;
-  padding-bottom: 4.5em; }
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
 
 .bg-dark {
-  background: #2e2f37 !important; }
+    background: #2e2f37 !important;
+}
 
 .dark-bg {
-  background: #1d1d22; }
+    background: #1d1d22;
+}
 
 #home img {
-  height: 40px;
-  width: 40px;
-  margin: 20px 0; }
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+}
 
 #main-header a {
-  color: #f0f0f7; }
+    color: #f0f0f7;
+}
 
 #main-header a:hover {
-  color: #b7b7ce; }
+    color: #b7b7ce;
+}

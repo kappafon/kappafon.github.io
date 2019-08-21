@@ -2,6 +2,15 @@
     --nav-bar-width: calc(6.25rem + 5vmin);
     --nav-bar-height: 3.75rem;
     --footer-height: 1.5625rem;
+    --container-padding: calc(0.625rem + 5vmin);
+
+    --primary-color: #9d5c63;
+    --secondary-color: #d6e3f8;
+    --tetriary-color: #e4bb97;
+    --background-color: #28292b;
+    --background-alt-color: #3b3c3e;
+    /* --shadow-color: #fef5ef; */
+    --font-color: #fef5ef;
 }
 
 * {
@@ -9,103 +18,127 @@
 }
 
 .body {
+    width: 100vw;
     height: 100vh;
     max-height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* region mobile nav-bar */
 .nav-bar__bottom {
-    box-shadow: 0 -1px 6px gainsboro;
+    position: fixed;
+    bottom: var(--footer-height);
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: var(--nav-bar-height);
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    bottom: var(--footer-height);
-    background: white;
+    height: var(--nav-bar-height);
+
+    border-top: 3px solid var(--background-alt-color);
+    /* box-shadow: 0 -1px 1px white; */
 }
 
-.nav-bar__bottom > .nav-bar__header {
+.nav-bar__bottom > .nav-bar__header,
+.nav-link > span {
     display: none;
 }
 
 .nav-bar__bottom > ul {
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
     list-style-type: none;
+}
+
+.nav-item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    /* border-right: 1px solid var(--background-color); */
+    /* border-left: 1px solid rgba(253, 102, 0, 1); */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    color: white;
+    text-decoration: none;
+
+    background-color: var(--primary-color);
+}
+
+.nav-link > i {
+    margin-top: -5px;
+    padding: 0 5px 3px 5px;
+
+    box-shadow: 0 5px 7px -6px var(--tetriary-color);
+}
+
+.fas {
+    font-size: 1.75rem;
 }
 /* endregion mobile nav-bar */
 
 /* region mobile main-content */
 .container {
-    width: 100%;
-    overflow: auto;
-    height: calc(100vh - (var(--nav-bar-height) + var(--footer-height)));
-    height: calc(100% - (var(--nav-bar-height) + var(--footer-height)));
     z-index: 0;
+
+    height: calc(100% - (var(--nav-bar-height) + var(--footer-height)));
+    /* padding: 0 var(--container-padding); */
+    overflow: auto;
+
+    background: var(--background-alt-color);
+}
+
+.container > .main-section {
+    /* margin: 1.875rem calc(-1 * (var(--container-padding))); */
+    margin: 1.875rem 0;
+    padding: var(--container-padding);
+
+    color: var(--font-color);
+
+    background: var(--background-color);
+
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
 }
 /* endregion mobile main-content */
 
 /* region mobile footer */
 .footer {
-    background: #e9e9e9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: var(--footer-height);
-    width: 100%;
     position: fixed;
-    z-index: 1;
     bottom: 0;
+    z-index: 2;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--footer-height);
+
     text-align: center;
     vertical-align: middle;
+
+    background: var(--primary-color);
+}
+
+.footer > a {
+    margin: 0 5px;
+    padding: 5px 0;
 }
 
 .footer > span {
     display: none;
 }
 /* endregion mobile footer */
-
-@media only screen and (min-width: 768px) {
-    /* desktop */
-
-    /* region desktop nav-bar */
-    .nav-bar__side {
-        justify-content: flex-start;
-        height: calc(100% - var(--footer-height));
-        width: var(--nav-bar-width);
-        position: fixed;
-        z-index: 1;
-        background: white;
-        top: 0;
-        left: 0;
-    }
-
-    .nav-bar__bottom > .nav-bar__header {
-        display: block;
-    }
-
-    .nav-bar__side > ul {
-        display: block;
-    }
-    /* endregion desktop nav-bar */
-
-    /* region desktop main-content */
-    .container {
-        width: calc(100% - var(--nav-bar-width));
-        height: calc(100vh - var(--footer-height));
-        margin-left: var(--nav-bar-width);
-    }
-    /* endregion desktop main-content */
-
-    /* region desktop footer */
-    .footer > span {
-        margin: 0 5px;
-        display: inline;
-    }
-    /* endregion desktop footer */
-}

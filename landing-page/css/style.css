@@ -1,191 +1,209 @@
-body{
-  background-color:white;
+body {
+    background-color: white;
 }
 
 /*navbar style*/
 
-.navbar{
-  background:hsl(24, 100%, 50%);
+.navbar {
+    background: hsl(24, 100%, 50%);
 }
-.nav-link , .navbar-brand{
-  color: hsl(0, 0%, 100%);
-  cursor: pointer;
+.nav-link,
+.navbar-brand {
+    color: hsl(0, 0%, 100%);
+
+    cursor: pointer;
 }
-.nav-link{
-  margin-right: 1em !important;
+.nav-link {
+    margin-right: 1em !important;
 }
-.nav-link:hover{
-  background: hsl(0, 0%, 100%);
-  color: hsl(24, 100%, 50%);
+.nav-link:hover {
+    color: hsl(24, 100%, 50%);
+
+    background: hsl(0, 0%, 100%);
 }
-.navbar-collapse{
-  justify-content: flex-end;
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
-.navbar-collapse{
-  justify-content: flex-end;
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
 /*header style*/
 
 .logo {
-  width: 50px;
-  
-  float: left;
-  padding-right: 5px;
-  opacity: 0.5;
-  
+
+    float: left;
+    width: 50px;
+    padding-right: 5px;
+
+    opacity: 0.5;
 }
 
-.header{
-  background-image: url('../images/headerback.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
- }
+.header {
+    height: 100vh;
 
-.overlay{
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(244, 244, 244, 0.80);
+    background-image: url('../images/headerback.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.description{
-  position: absolute;
-  top: 30%;
-  margin: auto;
-  padding: 2em;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    background: rgba(244, 244, 244, 0.8);
 }
-.description h1{
-color:hsl(24, 100%, 50%);
+
+.description {
+    position: absolute;
+    top: 30%;
+
+    margin: auto;
+    padding: 2em;
 }
-.description p{
-color:#666;
-font-size: 20px;
-width: 50%;
-line-height: 1.5;
+.description h1 {
+    color: hsl(24, 100%, 50%);
 }
-.description button{
-border:1px  solid hsl(24, 100%, 50%);
-background:hsl(24, 100%, 50%);
-color:#fff;
+.description p {
+    width: 50%;
+
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.description button {
+    color: #fff;
+
+    background: hsl(24, 100%, 50%);
+    border: 1px solid hsl(24, 100%, 50%);
 }
 
 .btn-outline-primary:hover {
-  background-color: hsl(212, 100%, 50%)!important;
+    background-color: hsl(212, 100%, 50%) !important;
 }
 
 /*about style*/
 
-.about{
-	margin: 4em 0;
-	padding: 1em;
-	position: relative;
+.about {
+    position: relative;
+
+    margin: 4em 0;
+    padding: 1em;
 }
-.about h2{
-  color:hsl(24, 100%, 50%);
-  font-size: 2.5em;
-	margin: 2em;
+.about h2 {
+    margin: 2em;
+
+    color: hsl(24, 100%, 50%);
+    font-size: 2.5em;
 }
-.about img{
-	height: auto;
+.about img {
     width: 100%;
-    border-radius: 50%
+    height: auto;
+
+    border-radius: 50%;
 }
-.about span{
-	display: block;
-	color: #888;
-	position: absolute;
-	left: 115px;
+.about span {
+    position: absolute;
+    left: 115px;
+
+    display: block;
+
+    color: #888;
 }
-.about .desc{
-	padding: 2em;
-	border-left:4px solid hsl(212, 100%, 50%);
+.about .desc {
+    padding: 2em;
+
+    border-left: 4px solid hsl(212, 100%, 50%);
 }
-.about .desc h3{
-	color: hsl(212, 100%, 50%);
+.about .desc h3 {
+    color: hsl(212, 100%, 50%);
 }
-.about .desc p{
-	line-height:2;
-	color:#888;
+.about .desc p {
+    color: #888;
+    line-height: 2;
 }
 
 /*usage style*/
 
-.usage{
-	margin: 4em 0;
-	position: relative;	
+.usage {
+    position: relative;
+
+    margin: 4em 0;
 }
-.usage h2{
-  color:#F97300;
-  font-size: 2.5em;
-	margin: 2em;	
+.usage h2 {
+    margin: 2em;
+
+    color: #f97300;
+    font-size: 2.5em;
 }
-.usage .card{
-  box-shadow: 0 0 20px #ccc;
-  margin: 5px;
+.usage .card {
+    margin: 5px;
+
+    box-shadow: 0 0 20px #ccc;
 }
-.usage .card img{
-  width: 100%;
-  height: 14em;
-	object-fit: cover;
+.usage .card img {
+    width: 100%;
+    height: 14em;
+    object-fit: cover;
 }
 
-.usage .card-title{
-	color:#F97300;
-	 
+.usage .card-title {
+    color: #f97300;
 }
-.usage .card-body{
-	padding: 1em;
-}
-
-.contact-form{
-  margin: 6em 0;
-  position: relative;  
-}
-.contact-form h1{
-  padding:2em 1px;
-  color: #F97300; 
-}
-.contact-form .right{
-  max-width: 500px;
-}
-.contact-form .right .btn-secondary{
-  background:  #F97300;
-  color: #fff;
-  border:0;
-}
-.contact-form .right .form-control::placeholder{
-  color: #888;
-  font-size: 16px;
+.usage .card-body {
+    padding: 1em;
 }
 
-.invest h2{
-  color:hsl(24, 100%, 50%);
-  font-size: 2.5em;
-  margin: 2em;
+.contact-form {
+    position: relative;
+
+    margin: 6em 0;
+}
+.contact-form h1 {
+    padding: 2em 1px;
+
+    color: #f97300;
+}
+.contact-form .right {
+    max-width: 500px;
+}
+.contact-form .right .btn-secondary {
+    color: #fff;
+
+    background: #f97300;
+    border: 0;
+}
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+.invest h2 {
+    margin: 2em;
+
+    color: hsl(24, 100%, 50%);
+    font-size: 2.5em;
 }
 
 .vertical {
     margin-bottom: 2em;
 }
 
-
-
 .buttonFix {
-  background: hsl(24, 100%, 50%)!important; 
-  color: white!important;
-  border: none!important;
+    color: white !important;
+
+    background: hsl(24, 100%, 50%) !important;
+    border: none !important;
 }
 
 @media screen and (max-width: 833px) {
-
 }
 
 @media screen and (max-width: 520px) {
-
 }

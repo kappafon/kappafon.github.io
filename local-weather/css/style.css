@@ -1,77 +1,80 @@
-html, body {
-  margin: 30px;
-  font-family: 'VT323', monospace;
+html,
+body {
+    margin: 30px;
+
+    font-family: 'VT323', monospace;
 }
 
 h1 {
-  text-align: center;
-  font-size: 46px;
+    font-size: 46px;
+    text-align: center;
 }
 
 #storm {
-  overflow: auto;
-  image-rendering: pixelated;
-  margin: 0 auto;
-  text-align: center;
-  z-index: -1;
-  position: relative;
-  width: 256;
+    position: relative;
+    z-index: -1;
+
+    width: 256;
+    margin: 0 auto;
+    overflow: auto;
+
+    text-align: center;
+    image-rendering: pixelated;
 }
 
 #storm:hover {
-  top: -5px;
+    top: -5px;
 }
 
 #switch {
-  padding: 5px 0px;
-  margin-top: 50px;
-  width: 200px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 25px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5px 0px;
+
+    font-size: 25px;
+    text-align: center;
 }
 
 #switch:active {
-  margin-top: 3px;
+    margin-top: 3px;
 }
 
 #switch:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #dialogBox p {
-  display: inline;
+    display: inline;
 }
 
 #dialogBox {
-  font-size: 25px;
-  background: white;
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
+
+    font-size: 25px;
+
+    background: white;
 }
 
 #dialogBox,
 #switch {
-  box-shadow: 0 -6px 0 -2px white, 0 6px 0 -2px white, 0 -12px 0 -4px white,
-    0 12px 0 -4px white, 0 -18px 0 -8px white, 0 18px 0 -8px white,
-    0 -24px 0 -12px white, 0 24px 0 -12px white, -4px 0 0 0 white,
-    4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white,
-    0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white,
-    0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white,
-    0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white,
-    -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black,
-    0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black,
-    0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black,
-    0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black,
-    0 30px 0 -12px black;
+    box-shadow: 0 -6px 0 -2px white, 0 6px 0 -2px white, 0 -12px 0 -4px white, 0 12px 0 -4px white, 0 -18px 0 -8px white,
+        0 18px 0 -8px white, 0 -24px 0 -12px white, 0 24px 0 -12px white, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white,
+        0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white,
+        0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black,
+        6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black,
+        0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black,
+        0 30px 0 -12px black;
 }
 
 footer {
-  margin: 0 auto;
-  padding: 10px;
+    margin: 0 auto;
+    padding: 10px;
 
-  opacity: .75;
-  background-color: lightgray;
+    font-size: 0.5em;
 
-  font-size: .5em;
+    background-color: lightgray;
+
+    opacity: 0.75;
 }
