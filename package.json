@@ -1,0 +1,20 @@
+{
+    "devDependencies": {
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.3",
+        "stylelint": "^10.1.0",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-order": "^3.0.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.css": [
+            "stylelint --fix",
+            "git add"
+        ]
+    }
+}
