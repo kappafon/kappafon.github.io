@@ -55,7 +55,7 @@ button {
     font-size: 1em;
 
     background-color: hsl(46, 24%, 54%);
-    border: 0px solid;
+    border: 0 solid;
     border-radius: 7px;
 }
 

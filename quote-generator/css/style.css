@@ -24,7 +24,6 @@ body {
 }
 
 .container > * {
-
     grid-column: 2 / 4;
     min-width: 0;
 }
@@ -140,7 +139,7 @@ footer > * {
         font-size: 1em;
     }
     .container {
-        grid-template-columns: 0px 1fr 1fr 0px;
+        grid-template-columns: 0 1fr 1fr 0;
     }
     .column-1 {
         align-items: flex-end;
