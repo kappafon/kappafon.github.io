@@ -127,6 +127,12 @@ p {
 
     background: var(--secondary-color);
 }
+
+.main-section > ul > li {
+    margin: 20px 0;
+
+    line-height: 24px;
+}
 /* endregion mobile main-content */
 
 /* region mobile footer */
